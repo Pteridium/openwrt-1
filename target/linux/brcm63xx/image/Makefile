@@ -215,6 +215,12 @@ define Image/Build
 	# Neufbox4
 	$(call Image/Build/CFE,$(1),96358VW,6358,NEUFBOX4,OpenWRT-$(REVISION))
 
+	# Comtrend VR-3025un
+	$(call Image/Build/CFE,$(1),96368M-1341N,6368,VR-3025un,,--pad 4)
+
+	# Comtrend VR-3025u
+	$(call Image/Build/CFE,$(1),96368M-1541N,6368,VR-3025u,,--pad 16)
+
 	# Neufbox6
 	$(call Image/Build/CFE,$(1),NB6-SER-r0,6362,NEUFBOX6,OpenWRT-$(REVISION))
 
